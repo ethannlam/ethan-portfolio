@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ethan's Portfolio</title>
+  <link rel="stylesheet" href="style-index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Playfair+Display&family=Roboto+Mono&display=swap" rel="stylesheet">  
+</head>
+
+<body>
+  <header class="hero-banner">
+    <div class="hero-content">
+      <h1 class="gradient-title">Welcome to My Portfolio</h1>
+      <p class="typing-subheading"><span id="typewriter"></span></p>
+    </div>
+    
+    <div class="scroll-down" id="scrollPrompt">
+      <span>Scroll Down</span>
+      <div class="arrow">&#x25BC;</div>
+    </div>
+  </header>
+
+  <!-- Navigation Section -->
+  <header class="main-nav">
+    <h1>Ethan Lam</h1>
+    <nav>
+      <a href="#about">
+        <i class="fas fa-user"></i>About Me
+      </a>
+      <a href="#contact" data-modal="contact-modal">
+        <i class="fas fa-envelope"></i>Contact Information
+      </a>
+      <a href="#projects">
+        <i class="fas fa-gear"></i>View my Projects
+      </a>
+      <a href="https://www.linkedin.com/in/ethan-lam-776b46238" target="_blank">
+        <i class="fab fa-linkedin"></i>Visit my LinkedIn
+      </a>
+      <a href="files/Ethan Lam Resume 4-11-25.pdf" download target="_blank">
+        <i class="fas fa-file-alt"></i>Download my Resume
+      </a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-grid">
+        <div class="personal-image">
+          <img src="images/personal.png" alt="A description of the image" />
+        </div>
+        <div class="about-content">
+          <h3 style="text-decoration: underline;">Welcome to my Portfolio!</h3>
+          <p>Hi, I’m Ethan Lam — a mechanical engineering student at Cal Poly Pomona, graduating in May 2025. I’m passionate about designing innovative solutions for automotive and aerospace applications, and I enjoy tackling hands-on engineering challenges that push the limits of technology, performance, and efficiency.</p>
+          <p>Through projects like developing an autonomous drone, leading the mechanical design for a Formula SAE drivetrain's system components, and engineering rover wheels for mars exploration competitions, I’ve gained valuable insight into the integration of electro-mechanical systems, the use of lightweight materials, and precise additive manufacturing techniques.</p>
+          <p>I’m  skilled in 3D CAD modeling with both SolidWorks and SketchUp, FEA analysis using Solidworks and Ansys, and embedded systems using Arduino and Raspberry Pi. These skills are reinforced with extensive hands on experience 3D printing for both prototyping and functional component manufacturing.</p>
+          <p>I'm looking for a full-time engineering role where I can work on hands-on design and development projects in the automotive or aerospace industry. I'm particularly interested in roles that involve mechanical design and system integration, where I can continue to grow my skills as a design engineer. I'm excited to be a part of a team looking to drive innovation and engineer the future of society.</p>
+          <hr class="solid-line" />
+          <h3>Contact Information</h3>
+          <p>Email: esml42003@gmail.com | Phone: +1 (626) 248-6922</p>
+          <p>&copy; Ethan Lam 2025</p>
+        </div>
+  </section>
+
+  <section id="projects">
+        <h2>View my Projects</h2>
+        <div class="project-grid">  
+            <div class="project-card" data-modal="modal1">
+              <h3>Mini Maker Mill</h3>
+              <hr class="solid-line"/>
+              <img src="images/mini_maker_mill_team.jpg" alt="Image Shown: The Mini Maker Mill Team"/>
+              <figcaption><em>The Mini Maker Mill Team</em></figcaption>
+              <hr class="solid-line" />
+              <p>The Mini Maker Mill combines the power of CNC milling with extrusion 3D printing. The project began as an initiative to create a compact solution for rapid prototyping.</p>
+              <p><em>Skills Used: G-Code, Machining, 3D-Printing, FE Analysis, CAD-Modeling, Wiring, Stress Analysis</em></p>
+              <p><em>Click to learn more</em></p>
+            </div>
+            
+            <!--
+            <div class="project-card" data-modal="modal2">
+              <h3>Autonomous Drone</h3>
+              <hr class="solid-line" />
+              <img src="images/my-image.jpg" alt="Image Shown: Fully Assembled Autonomous Drone" />
+              <figcaption><em>Fully Assembled Autonomous Drone</em></figcaption>
+              <hr class="solid-line"/>
+              <p>Project 2 information</p>
+              <p><em>Skills Used: Arduino, Soldering, Interfacing with Sensors, Flight Controllers</em></p>
+              <p><em>Click to learn more</em></p>
+            </div>
+            -->
+
+            <div class="project-card" data-modal="modal4">
+                <h3>Portfolio Website</h3>
+                <hr class="solid-line" />
+                <img src="images/portfolio_title_page.png" alt="Image Shown: Portfolio Title Page" />
+                <figcaption><em>Portfolio Website Title Page</em></figcaption>
+                <hr class="solid-line"/>
+                <p>This is the website you are currently on right now. I decided to create this portoflio webpage to both showcase my projects in a creative and engaging way, as well as to learn HTML and web design basics. This website will be updated with new features and as new personal projects come and go, so please check in every once in a while to see what I am up too!</p>
+                <p><em>Skills Used: HTML, CSS, Javscript</em></p>
+                <p><em>Click to learn more</em></p>
+            </div>
+        
+            <div class="project-card" data-modal="modal3">
+              <h3>Light Sensitivity Sensor</h3>
+              <hr class="solid-line" />
+              <img src="images/light_sensor_circuit.png" alt="Image Shown: Fully Assembled Light Sensitivity Sensor" />
+              <figcaption><em>Fully Assembled Light Sensitivity Sensor</em></figcaption>
+              <hr class="solid-line"/>
+              <p>This light sensitivity sensor uses a photoresistor in a voltage divider circuit to accurately measure light birghtness in the environment. </p>
+              <p><em>Skills Used: Arduino, Interfacing with sensors, NI Elvis LabVIEW</em></p>
+              <p><em>Click to learn more</em></p>
+            </div>
+
+            <div class="project-card" data-modal="modal5">
+              <h3>AI Rover Wheel</h3>
+              <hr class="solid-line" />
+              <img src="images/ai_rover_wheel_print.png" alt="3D Printed Rover Wheel Prototype" />
+              <figcaption><em>3D Printed Rover Prototype Wheel</em></figcaption>
+              <hr class="solid-line"/>
+              <p>This is a wheel I designed for the the BILL-EE Rover team. The goal was to design and manufacture a wheel that was lightweight yet strong and rigid yet flexible when it needed to be in order to traverse a Mars-like terrain.</p>
+              <p><em>Skills Used: CAD Modeling, Finite Element Analysis, 3D Printing, Mechanical System Design, Rapid Prototyping</em></p>
+              <p><em>Click to learn more</em></p>
+            </div>
+            
+            <!--
+            <div class="project-card" data-modal="modal6">
+              <h3>project 6 title</h3>
+              <hr class="solid-line" />
+              <img src="images/my-image.jpg" alt="A description of the image" />
+              <figcaption><em>Fully Assembled</em></figcaption>
+              <hr class="solid-line"/>
+              <p>Project 6 information</p>
+              <p><em>Skills Used: </em></p>
+              <p><em>Click to learn more</em></p>
+            </div>
+            -->
+            
+        </div>
+
+        <div id="contact-modal" class="modal hidden">
+          <div class="contact-modal">
+            <span class="close-btn">&times;</span>
+            <h2>Contact Information</h2>
+            <p>Email: esml42003@gmail.com</p>
+            <p>Phone: +1 (626)-248 6922</p>
+            <p>&copy; Ethan Lam 2025</p>
+          </div>
+        </div>
+
+    <div id="modal1" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Mini Maker Mill</h2>
+        <div class="image1-grid">
+          <figure>
+            <img src="images/mini_maker_mill_assembly.png" alt="Assmebly of Mini Maker Mill" />
+            <figcaption><em>Mini Maker Mill Full Assembly</em></figcaption>
+          </figure>
+          
+          <figure>
+            <img src="images/mini_maker_mill_concept.png" alt="Photo of Assembled Mini Maker Mill" />
+            <figcaption><em>Early Mini Maker Mill Frame Concepts</em></figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/mini_maker_mill_wiring.png" alt="Mini Maker Mill Wiring Diagram" />
+            <figcaption><em>Mini Maker Mill Wiring Diagram</em></figcaption>
+          </figure>
+
+          <div class="text-block1">
+            <h3>Project Description</h3>
+            <p>The idea behind the Mini Maker Mill came from frustration with the poor tolerances that come with Fused Filament Fabrication (FFF) 3D printing. While not a big issue when printing models for show, inconsistent tolerances can become a serious issue when printing mechanical components. Currently, the remedy for this issue is manually machining each printed component to fit the required tolerances. This, however, is extremely tedious and time consuming.</p>
+            <p>To solve this issue I, along with a team of five other engineering students, set out to design an all-in-one solution that automates both the printing and machining processs. This results in both faster and more accurate manufacturing.</p>
+            <p>The Mini Maker Mill was designed to be compact and space efficient, tailored towards smaller scale operations such as student project teams or startups.</p>
+            <p>The frame was assembled from slotted extruded aluminum channels and reinforced using aluminum corner brackets. Major components, drill and nozzle mounts were 3D printed with PLA. The drill and nozzle head move along vertical and horizontal lead screws powered by stepper motors.</p>
+          </div>
+
+          <figure>
+            <img src="images/mini_maker_mill_photo.jpg" alt="A description of the image" />
+            <figcaption><em>Fully Assembled Mini Maker Mill</em></figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Autonomous Drone</h2>
+        <div class="image2-grid">
+          <figure>
+            <img src="images/image" alt="A description of the image" />
+            <figcaption><em>Description of Image</em></figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/drone_manual_control.png" alt="Manual Controls App for the Drone" />
+            <figcaption><em>Autonomous Drone Manual Controls App</em></figcaption>
+          </figure>
+
+          <div class="text-block2">
+            <h3>Project Description</h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Light Sensitivity Sensor</h2>
+        <div class="image3-grid">
+          <figure>
+            <img src="images/light_sensor_code.png" alt="A description of the image" />
+            <figcaption><em>Light Sensitivity Sensor Arduino Code</em></figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/light_sensor_dark.png" alt="A description of the image" />
+            <figcaption><em>Light Sensitivity Sensor in Dark Environment</em></figcaption>
+          </figure>
+
+          <div class="text-block3">
+            <h3>Project Description</h3>
+            <p>This light sensitivity sensor uses a photoresistor in a voltage divider circuit to accurately measure light brightness in the environment. The sensor is connected to an Arduino board, which processes the data and provides real-time feedback on light levels.</p>
+            <p>The project involved designing the circuit, programming the Arduino, and testing the sensor's performance under various lighting conditions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal4" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Portfolio Website</h2>
+        <p>Details about the Portfolio Website project.</p>
+        <div class="image4-grid">
+          <figure>
+            <img src="images/portfolio_html_body_and_nav.png" alt="A description of the image"/>
+            <figcaption><em>Portfolio Website HTML Code Snippet</em></figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/portfolio_js_code.png" alt="A description of the image" />
+            <figcaption><em>Website Javascript Title Page Typing Animation Code</em></figcaption>
+          </figure>
+
+          <div class="text-block5">
+            <h3>Project Description</h3>
+            <p>This webiste was built to showcase my engineering projects, skills, and my technical background in a creative way. I also wanted to challenge mysself by learning HTML and applying it to a real world project. This webpage serves as both a creative outlet and a platform where I can communicate who I am as an engineer.</p>
+            <p>This site features an interactive layout that highlights my engineering projects with modal-based project previews. Each project incldudes detailed descriptions and images, from concept to final product, as well as a breakdown of the key skills used.</p>
+            <p>This webpage was developed using HTML, CSS, and Javascript, and was designed with an emphasis on responsive design, clean and simple navigation, and user-friendly interactivity.</p>
+            <p>This project demonstrates my ability to learn new skills quickly, and present information in a clear and efective manner.</p>
+          </div>
+
+          <figure class="image4-right">
+            <img src="images/portfolio_css_modal_snippet.png" alt="A description of the image" />
+            <figcaption><em>Portfolio Website Modal Animation CSS Code</em></figcaption>
+          </figure>
+          
+        </div>
+      </div>
+    </div>
+
+    <div id="modal5" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>AI Rover Wheel</h2>
+        <div class="image5-grid">
+
+          <figure>
+            <img src="images/ai_rover_wheel_cad.png" alt="A description of the image" />
+            <figcaption><em>AI Rover Wheel CAD Model</em></figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/ai_rover_wheel_assembly.png" alt="A description of the image" />
+            <figcaption><em>AI Rover Wheel Assembly</em></figcaption>
+          </figure>
+
+          <div class="text-block5">
+            <h3>Project Description</h3>
+            <p>The AI Rover Wheel project focused on the design and implementation of a lightweight, 3D printed wheel for the traversal of a rough, rocky, and unpredictable terrain. The primary goal was to optimaize durability while minimizing weight and cost.</p>
+            <p>The goal of the AI Rover team was to design and manufacture a rover with a mission to perform soil sample tests in a Mars-like environment. A key component of mission success was the rover's ability to efficiently traverse this terrain. The wheels were designed to work in tandem with a rocker-bogey suspension system.</p>
+            <p>It was importnat that the wheels were strong enough to support the full weight of the rover, while ramining flexible enough to maintain consistent traction across uneven terrain. This was achieved by using a honeycomb lattice structure, which provided both extra strength and helped retain material flexibility.</p>
+            <p>The chevron tread design was based off of NASA's Curiosity Rover, and designed to provide traction and stability while preventing any unwanted sideways movement.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    <div id="modal6" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Project 6</h2>
+        <p>Details about project 6.</p>
+        <img src="images/my-image.jpg" alt="A description of the image" />
+        <p>Additional information about the project.</p>
+      </div>
+    </div>
+    -->
+  </section>
+
+  <!-- Scripts -->
+  <script>
+    // === Typing Effect ===
+    const phrases = [
+      "Mechanical Engineer",
+      "Detail Oriented",
+      "Team Player",
+      "Creative Thinker",
+      "Determined & Driven",
+      "Problem Solver",
+      "Design & Innovation",
+      "Passionate Learner"
+    ];
+
+    const fonts = [
+      "'Inter', sans-serif",
+      "'Poppins', sans-serif",
+      "'Merriweather', serif",
+      "'Fira Code', monospace",
+      "'Lato', sans-serif",
+      "'Montserrat', sans-serif",
+      "'Times New Roman', serif",
+      "'Courier New', monospace",
+      "'Raleway', sans-serif",
+      "'Ubuntu', sans-serif",
+    ];
+
+    const typewriter = document.getElementById("typewriter");
+    let phraseIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    const typingSpeed = 120;
+    const deletingSpeed = 80;
+    const pauseAfterTyping = 2500;
+    const pauseAfterDeleting = 500;
+
+    function typeEffect() {
+      const currentPhrase = phrases[phraseIndex];
+      const isComplete = charIndex === currentPhrase.length;
+      const isEmpty = charIndex === 0;
+
+      if (!isDeleting) {
+        typewriter.textContent = currentPhrase.substring(0, charIndex + 1);
+        charIndex++;
+        if (isComplete) {
+          setTimeout(() => {
+            isDeleting = true;
+            typeEffect();
+          }, pauseAfterTyping);
+          return;
+        }
+      } else {
+        typewriter.textContent = currentPhrase.substring(0, charIndex - 1);
+        charIndex--;
+        if (isEmpty) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          const newFont = fonts[Math.floor(Math.random() * fonts.length)];
+          typewriter.style.fontFamily = newFont;
+          setTimeout(typeEffect, pauseAfterDeleting);
+          return;
+        }
+      }
+
+      const delay = isDeleting ? deletingSpeed : typingSpeed;
+      setTimeout(typeEffect, delay);
+    }
+
+    typewriter.style.fontFamily = fonts[Math.floor(Math.random() * fonts.length)];
+    typeEffect();
+
+    const contact = document.getElementById("contact");
+    let contactRevealed = false;
+
+    // === Scroll Animation ===
+    window.addEventListener("scroll", () => {
+        const scrollY = window.scrollY;
+        const windowHeight = window.innerHeight;
+
+        const hero = document.querySelector(".hero-banner");
+        const scrollPrompt = document.getElementById("scrollPrompt");
+        const nav = document.querySelector(".main-nav");
+        const about = document.getElementById("about");
+        const projects = document.getElementById("projects");
+
+        // === HERO FADE OUT ===
+        const fadeOutEnd = windowHeight / 2;
+        const progress = Math.min(scrollY / fadeOutEnd, 1);
+        const fadeOut = 1 - progress;
+
+        hero.style.opacity = fadeOut;
+        scrollPrompt.style.opacity = fadeOut;
+
+        // === NAV + ABOUT FADE IN after hero fades out ===
+        if (progress >= 1) {
+            nav.style.opacity = 1;
+            nav.style.pointerEvents = "auto";
+            about.style.opacity = 1;
+            projects.style.opacity = 1;
+            projects.style.pointerEvents = "auto";
+        } else {
+            nav.style.opacity = 0;
+            nav.style.pointerEvents = "none";
+            about.style.opacity = 0;
+            projects.style.opacity = 0;
+            projects.style.pointerEvents = "none";
+        }
+
+        const trail = document.querySelector('.rocket-trail');
+
+        window.addEventListener('scroll', () => {
+          const scrollY = window.scrollY;
+          const progress = Math.min(scrollY / (window.innerHeight * 0.8), 1);
+
+          trail.style.opacity = 1 - progress;
+          trail.style.transform = `translate(-50%, ${progress * 100}px)`;
+        });
+
+
+    });
+
+    document.querySelector('a[href="#projects"]').addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const projectGrid=document.getElementById("projects");
+      const offset=100;
+      const scrollPosition = projectGrid.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: "smooth",
+      });
+    });
+
+    document.querySelector('a[href="#about"]').addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const projectGrid=document.getElementById("about");
+      const offset=200;
+      const scrollPosition = projectGrid.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: "smooth",
+      });
+    });
+
+    // Open the modal when the button is clicked
+    document.querySelector('a[data-modal="contact-modal"]').addEventListener("click", function (e) {
+      e.preventDefault(); // Prevent default anchor behavior
+      const modal = document.getElementById("contact-modal");
+      if (modal) modal.classList.remove("hidden");
+    });
+
+    // Close the modal when the close button is clicked
+    document.querySelector("#contact-modal .close-btn").addEventListener("click", function () {
+      const modal = document.getElementById("contact-modal");
+      if (modal) modal.classList.add("hidden");
+    });
+
+    // Optional: Close the modal when clicking outside the modal content
+    document.querySelector("#contact-modal").addEventListener("click", function (e) {
+      if (e.target === this) {
+        this.classList.add("hidden");
+      }
+    });
+
+
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('click', () => {
+        const modalId = card.getAttribute('data-modal');
+        const modal = document.getElementById(modalId);
+
+        if (modal) modal.classList.remove('hidden');
+
+        modal.Content.style.animation = "none";
+        modal.Content.offsetHeight; // Trigger reflow
+        modal.Content.style.animation = 'modalFadeIn 0.3s ease-out';
+      });
+    });
+
+    document.querySelectorAll('.close-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const modal = btn.closest('.modal');
+
+        if (modal) modal.classList.add('hidden');
+      });
+    });
+
+    // Optional: close when clicking outside modal content
+    document.querySelectorAll('.modal').forEach(modal => {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+          modal.classList.add('hidden');
+        }
+      });
+    });
+
+
+    // Trigger once on load
+    window.dispatchEvent(new Event("scroll"));
+  </script>
+</body>
+</html>
