@@ -81,22 +81,22 @@
             <div class="project-card" data-modal="modal2">
               <h3>Autonomous Drone</h3>
               <hr class="solid-line" />
-              <img src="images/incomplete_drone_picture.jpg" alt="Image Shown: Partially Assembled Autonomous Drone" />
-              <figcaption><em>Partially Assembled Autonomous Drone</em></figcaption>
+              <img src="images/fully_assembled_drone.png" alt="Image Shown: Fully Assembled Autonomous Drone" />
+              <figcaption><em>Fully Assembled Autonomous Drone</em></figcaption>
               <hr class="solid-line"/>
-              <p>I helped design this drone with two other engineers as part of our Mechatronics Course. The goal was to test our skills on a variety of practical engineering topics, such as coding, control theory, sensor interfacing, structural annalysis, and project management.</p>
-              <p><em>Skills Used: Arduino, Soldering, Interfacing with Sensors, Flight Controllers</em></p>
+              <p>I designed this drone as part of my Mechatronics Course. The goal was to test my skills on a variety of practical engineering topics, such as coding, control theory, sensor interfacing, structural annalysis, and project management.</p>
+              <p><em>Skills Used: Arduino, Soldering, Interfacing with Sensors, Flight Controllers, PID Control Theory, MATLAB, Simulink</em></p>
               <p><em>Click to learn more</em></p>
             </div>
         
             <div class="project-card" data-modal="modal3">
               <h3>Light Sensitivity Sensor</h3>
               <hr class="solid-line" />
-              <img src="images/light_sensor_circuit.png" alt="Image Shown: Fully Assembled Light Sensitivity Sensor" />
+              <img src="images/light_sensitivity_sensor_box.jpg" alt="Image Shown: Fully Assembled Light Sensitivity Sensor" />
               <figcaption><em>Fully Assembled Light Sensitivity Sensor</em></figcaption>
               <hr class="solid-line"/>
               <p>This light sensitivity sensor uses a photoresistor in a voltage divider circuit to accurately measure light birghtness in the environment. </p>
-              <p><em>Skills Used: Arduino, Interfacing with sensors, NI Elvis LabVIEW</em></p>
+              <p><em>Skills Used: Arduino, Interfacing with sensors, NI Elvis LabVIEW, Mechanical Testing, Python, Data Analysis</em></p>
               <p><em>Click to learn more</em></p>
             </div>
 
@@ -176,8 +176,8 @@
         <h2>Autonomous Drone</h2>
         <div class="image2-grid">
           <figure>
-            <img src="images/drone_arduino_holder.png" alt="Image Shown: Arduino Case for Autonomous Drone" />
-            <figcaption><em>3D Printed Drone Arduino Case</em></figcaption>
+            <img src="images/drone_PID_code.png" alt="Image Shown: MATLAB Drone PID Tuning Code for Pitch" />
+            <figcaption><em>MATLAB Drone PID Tuning Code for Pitch</em></figcaption>
           </figure>
 
           <figure>
@@ -189,7 +189,7 @@
             <h3>Project Description</h3>
             <p>I helped design, build and program an autonomous drone designed to follow a GPS transmitter signal or preselected coordinates. The main goal was to make a multi-purpose drone designed for student interaction on campus. The idea came from the college freshman experience of not knowing where buildings were. The purpose of this drone is to guide students to their whichever building they request.</p>
             <p>Getting lost on campus was a feeling the team was all too familiar with, and so multiple different design ideas were considered to remedy this situation. We decided on building a drone instead of a rover, as the rover had the added difficulty of needing to be path dependent, while the drone simply needed to be aware of any obstacles in the y-axis. Building coordinates are predetermined, meaning the main challenge was building the student interface and the autonomous movement.</p>
-            <p>This project is currently under construction, as we are currently working on finishing both the manual modes and GPS tracking modes. Stay tuned for updates on that, as well as the drone-student interface.</p>
+            <p>Shown are some of the software tools we developed during the project. I ran PID tuning simulations for the drone's pitch, yaw, and roll for stable flight. I created a transfer function based on the physical specifications of the drone and motors, and used MATLAB's PIDTUNE function in order to find ideal Kp, Ki, and Kd values for mininmal overshoot and a quick response time. The manual flight controls were made using the Blynk IoT software platform, and allowed the user to have emergency control of the drone should anything go awry.</p>
           </div>
         </div>
       </div>
@@ -206,14 +206,15 @@
           </figure>
 
           <figure>
-            <img src="images/light_sensor_dark.png" alt="Image Shown: Light Sensitivity Sensor in Dark Environment" />
-            <figcaption><em>Light Sensitivity Sensor in Dark Environment</em></figcaption>
+            <img src="images/light_sensitivity_circuit.jpg" alt="Image Shown: Light Sensitivity Sensor Circuit" />
+            <figcaption><em>Light Sensitivity Sensor Circuit</em></figcaption>
           </figure>
 
           <div class="text-block3">
             <h3>Project Description</h3>
             <p>This light sensitivity sensor uses a photoresistor in a voltage divider circuit to accurately measure light brightness in the environment. The sensor is connected to an Arduino board, which processes the data and provides real-time feedback on light levels.</p>
-            <p>The project involved designing the circuit, programming the Arduino, and testing the sensor's performance under various lighting conditions.</p>
+            <p>The circuit operates as a voltage divider, which gives a simple relationship between input and output voltage based on resistance values. The Arduino's AnalogRead function was used to measure the output voltage, while both input voltage and one resistance were already known, leaving the photoresistor's resistance being the only unknown.</p>
+            <p>The most challenging part of the project ended up being calibration of the photoresistor. In order to ensure the photoresistor was outputting accurate lux values, we tested it alongside a luxmeter in various lighting conditions, plotting a log-log plot of the luxmeter output and the photoresistor resistance. The resulting trendline was plugged into a power law model, relating resistance to lux.</p>
           </div>
         </div>
       </div>
